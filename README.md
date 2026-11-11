@@ -14,6 +14,14 @@
 
 ---
 
+<p align="center">
+  <a href="#-das-problem">Problem</a> •
+  <a href="#-die-lösung">Lösung</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#️-wie-es-funktioniert">Funktionsweise</a> •
+  <a href="#️-troubleshooting">Troubleshooting</a>
+</p>
+
 ## 💡 Das Problem
 
 Am MacBook mit Trackpad fühlt sich **natürliches Scrollen** richtig an.
@@ -22,14 +30,15 @@ und muss jedes Mal in die Systemeinstellungen.
 
 ## ✨ Die Lösung
 
-Zwei kleine AppleScripts, die man auf eine Maustaste legt:
+Drei kleine AppleScripts, die man auf eine Maustaste legt – je nach Geschmack zwei Tasten (EIN/AUS) oder eine einzige (Toggle):
 
 | Skript | Wirkung |
 |---|---|
 | [`Scroll AUS.applescript`](scripts/Scroll%20AUS.applescript) | 🖥️ Natürliches Scrollen **aus** – für Maus am Schreibtisch |
 | [`Scroll EIN.applescript`](scripts/Scroll%20EIN.applescript) | 💻 Natürliches Scrollen **ein** – fürs Trackpad unterwegs |
+| [`Scroll Toggle.applescript`](scripts/Scroll%20Toggle.applescript) | 🔁 **Umschalten** – eine Taste für beides |
 
-Die Skripte prüfen zuerst den aktuellen Zustand – nochmal drücken schadet also nie.
+EIN/AUS prüfen zuerst den aktuellen Zustand – nochmal drücken schadet also nie.
 
 ## 🚀 Installation
 
@@ -67,6 +76,23 @@ bleiben und die Maus scrollt trotzdem klassisch. Ebenfalls gut: die Gratis-App
 | Es passiert nichts | Bedienungshilfen-Berechtigung prüfen (Schritt 4) |
 | Checkbox wird nicht gefunden | `delay`-Werte im Skript erhöhen (langsamer Mac) |
 | Neue macOS-Version bricht das Skript | Issue eröffnen – Apple ändert die Systemeinstellungen gelegentlich |
+
+## 📁 Struktur
+
+```text
+mac-natural-scroll-toggle/
+├── scripts/
+│   ├── Scroll AUS.applescript
+│   ├── Scroll EIN.applescript
+│   └── Scroll Toggle.applescript
+├── LICENSE
+└── README.md
+```
+
+## 🤝 Mitmachen
+
+Bug gefunden oder Idee? Gerne ein [Issue](../../issues) eröffnen oder einen Pull Request schicken.
+Wenn dir das Projekt hilft, freue ich mich über einen ⭐.
 
 ## 📄 Lizenz
 
